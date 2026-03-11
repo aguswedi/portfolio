@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Creative Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Agus<span>.portfolio</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#experience">Pengalaman</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:1rem;">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="icon" id="themeIcon">☀️</span>
+          <span id="themeLabel">Light</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <rect y="4" width="22" height="2" rx="1" fill="currentColor"/>
+            <rect y="10" width="22" height="2" rx="1" fill="currentColor"/>
+            <rect y="16" width="22" height="2" rx="1" fill="currentColor"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <div class="badge-dot"></div>
+        "Available for UI/UX & Data Projects"
+      </div>
+      <h1 class="hero-title">
+        Membangun<br>
+        <em>Pengalaman</em><br>
+        Digital
+      </h1>
+      <p class="hero-subtitle">
+        "Merancang Pengalaman, Mengolah Data — Menciptakan Solusi yang Bermakna"
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">
+          Lihat Proyek
+          <span>→</span>
+        </a>
+        <a href="#contact" class="btn-outline">
+          Hubungi Saya
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num" data-count="2">0</div>
+          <div class="stat-label">Tahun Pengalaman</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="5">0</div>
+          <div class="stat-label">Proyek Selesai</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" data-count="32">0</div>
+          <div class="stat-label">Klien Puas</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-img-wrap reveal">
+          <div class="about-img-bg" style="padding:0;overflow:hidden;">
+            <img src="./assets/foto_backgroundbiru.jpg" alt="">
+          </div>
+          <div class="about-img-accent">
+            <div class="num">2+</div>
+            <div class="lbl">Tahun Pengalaman</div>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="section-label reveal">Tentang Saya</div>
+          <h2 class="section-title reveal reveal-delay-1">Halo, saya <em style="font-style:italic;color:var(--accent2)">Agus Wedi</em> 👋</h2>
+          <div class="reveal reveal-delay-2">
+            <p>
+              "Saya adalah seorang <strong>UI/UX Designer & Data Scientist</strong> yang percaya bahwa desain yang baik bukan hanya soal tampilan — tetapi tentang bagaimana data dan intuisi manusia bekerja bersama untuk menciptakan produk yang benar-benar dibutuhkan pengguna. Dengan pendekatan data-driven design, saya menggabungkan riset mendalam, visualisasi data, dan empati pengguna untuk membangun antarmuka yang tidak hanya indah, tetapi juga cerdas dan fungsional."
+            </p>
+          </div>
+          <div class="skills-grid reveal reveal-delay-3">
+            <span class="skill-chip">Figma</span>
+            <span class="skill-chip">Adobe XD</span>
+            <span class="skill-chip">Prototyping</span>
+            <span class="skill-chip">User Research</span>
+            <span class="skill-chip">Wireframing</span>
+            <span class="skill-chip">Design System</span>
+            <span class="skill-chip">Python</span>
+            <span class="skill-chip">Machine Learning</span>
+            <span class="skill-chip">TensorFlow</span>
+            <span class="skill-chip">Pandas</span>
+            <span class="skill-chip">SQL</span>
+            <span class="skill-chip">Tableau</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-head">
+        <div class="section-label reveal">Portofolio</div>
+        <h2 class="section-title reveal reveal-delay-1">Proyek Pilihan</h2>
+        <p class="section-subtitle reveal reveal-delay-2">"Setiap proyek lahir dari pertanyaan: bagaimana data dapat membentuk desain yang lebih baik? Berikut adalah karya-karya yang mencerminkan perpaduan antara analisis mendalam dan kreativitas visual."</p>
+      </div>
+      <div class="projects-grid">
+        <!-- Card 1 -->
+        <div class="project-card reveal">
+          <div class="project-thumb p1">🛒<div class="project-thumb-overlay"></div></div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">MongoDB</span>
+            </div>
+            <div class="project-name">ShopWave Platform</div>
+            <div class="project-desc">Platform e-commerce modern dengan fitur real-time inventory, payment gateway, dan dashboard analytics yang komprehensif.</div>
+          </div>
+          <div class="project-footer">
+            <a href="#" class="project-link">Live Demo <span class="project-link-arrow">→</span></a>
+            <a href="#" class="project-link">GitHub <span class="project-link-arrow">→</span></a>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-thumb p2">💬<div class="project-thumb-overlay"></div></div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Next.js</span>
+              <span class="project-tag">Socket.io</span>
+              <span class="project-tag">Redis</span>
+            </div>
+            <div class="project-name">NexChat App</div>
+            <div class="project-desc">Aplikasi chat real-time dengan enkripsi end-to-end, group channels, file sharing, dan integrasi notifikasi push.</div>
+          </div>
+          <div class="project-footer">
+            <a href="#" class="project-link">Live Demo <span class="project-link-arrow">→</span></a>
+            <a href="#" class="project-link">GitHub <span class="project-link-arrow">→</span></a>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-thumb p3">📊<div class="project-thumb-overlay"></div></div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">FastAPI</span>
+              <span class="project-tag">D3.js</span>
+            </div>
+            <div class="project-name">DataViz Dashboard</div>
+            <div class="project-desc">Dashboard analitik interaktif dengan visualisasi data canggih, laporan otomatis, dan prediksi berbasis machine learning.</div>
+          </div>
+          <div class="project-footer">
+            <a href="#" class="project-link">Live Demo <span class="project-link-arrow">→</span></a>
+            <a href="#" class="project-link">GitHub <span class="project-link-arrow">→</span></a>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="project-card reveal">
+          <div class="project-thumb p4">🏥<div class="project-thumb-overlay"></div></div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">React Native</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">Firebase</span>
+            </div>
+            <div class="project-name">MediTrack Mobile</div>
+            <div class="project-desc">Aplikasi kesehatan mobile untuk tracking jadwal obat, konsultasi dokter online, dan rekam medis digital yang aman.</div>
+          </div>
+          <div class="project-footer">
+            <a href="#" class="project-link">App Store <span class="project-link-arrow">→</span></a>
+            <a href="#" class="project-link">GitHub <span class="project-link-arrow">→</span></a>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-thumb p5">🎓<div class="project-thumb-overlay"></div></div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Vue.js</span>
+              <span class="project-tag">Laravel</span>
+              <span class="project-tag">MySQL</span>
+            </div>
+            <div class="project-name">LearnHub LMS</div>
+            <div class="project-desc">Platform learning management system dengan kelas interaktif, kuis adaptif, sertifikasi digital, dan forum komunitas.</div>
+          </div>
+          <div class="project-footer">
+            <a href="#" class="project-link">Live Demo <span class="project-link-arrow">→</span></a>
+            <a href="#" class="project-link">GitHub <span class="project-link-arrow">→</span></a>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-thumb p6">🤖<div class="project-thumb-overlay"></div></div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">OpenAI</span>
+              <span class="project-tag">LangChain</span>
+              <span class="project-tag">Next.js</span>
+            </div>
+            <div class="project-name">AI Assistant Bot</div>
+            <div class="project-desc">Asisten AI cerdas berbasis GPT-4 dengan kemampuan analisis dokumen, code review otomatis, dan multi-language support.</div>
+          </div>
+          <div class="project-footer">
+            <a href="#" class="project-link">Live Demo <span class="project-link-arrow">→</span></a>
+            <a href="#" class="project-link">GitHub <span class="project-link-arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-inner">
+      <div class="section-head">
+        <div class="section-label reveal">Karier</div>
+        <h2 class="section-title reveal reveal-delay-1">Perjalanan Profesional</h2>
+        <p class="section-subtitle reveal reveal-delay-2">Lima tahun membangun produk digital di berbagai industri.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">2022 — Sekarang</div>
+          <div class="timeline-role">Senior Full-Stack Developer</div>
+          <div class="timeline-company">TechNova Indonesia · Full-time</div>
+          <div class="timeline-desc">Memimpin tim 6 developer dalam membangun platform SaaS skala enterprise. Berhasil meningkatkan performa aplikasi hingga 3x lebih cepat dan mengurangi bug production sebesar 60%. Menerapkan arsitektur microservices dan CI/CD pipeline yang robust.</div>
+        </div>
+        <div class="timeline-item reveal reveal-delay-1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">2020 — 2022</div>
+          <div class="timeline-role">Frontend Developer</div>
+          <div class="timeline-company">Kreasi Digital Studio · Full-time</div>
+          <div class="timeline-desc">Membangun antarmuka pengguna untuk 15+ klien dari berbagai industri, dari startup fintech hingga perusahaan FMCG nasional. Spesialisasi dalam React dan animasi kompleks menggunakan GSAP dan Framer Motion.</div>
+        </div>
+        <div class="timeline-item reveal reveal-delay-2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-period">2019 — 2020</div>
+          <div class="timeline-role">Junior Web Developer</div>
+          <div class="timeline-company">StartupHub · Kontrak</div>
+          <div class="timeline-desc">Memulai karier profesional dengan mengembangkan fitur-fitur core pada platform marketplace lokal. Belajar best practices dalam pengembangan kolaboratif menggunakan Git, code review, dan agile methodology.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-label reveal">Kontak</div>
+          <h2 class="section-title reveal reveal-delay-1">Mari Berkolaborasi</h2>
+          <p class="reveal reveal-delay-2" style="margin-top:1rem;">
+            "Punya data yang ingin divisualisasikan? Produk yang butuh sentuhan desain? Mari kita duduk bersama dan wujudkan ide Anda menjadi solusi nyata."
+          </p>
+          <div class="contact-links reveal reveal-delay-3">
+            <a href="/cdn-cgi/l/email-protection#adc5c8c1c1c2edccc1c8d5c9c8db83c4c9" class="contact-link">
+              <span class="contact-link-icon">✉️</span>
+              <div class="contact-link-text">
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-val"><span class="__cf_email__" data-cfemail="543c3138383b143538312c3031227a3d30">[email&#160;protected]</span></span>
+              </div>
+            </a>
+            <a href="#" class="contact-link">
+              <span class="contact-link-icon">💼</span>
+              <div class="contact-link-text">
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-val">linkedin.com/in/aguswedi</span>
+              </div>
+            </a>
+            <a href="#" class="contact-link">
+              <span class="contact-link-icon">🐙</span>
+              <div class="contact-link-text">
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-val">github.com/aguswedi</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div class="contact-form" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nama</label>
+                <input type="text" placeholder="John Doe" id="nameInput"/>
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="john@example.com" id="emailInput"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Subjek</label>
+              <input type="text" placeholder="Diskusi Proyek Baru"/>
+            </div>
+            <div class="form-group">
+              <label>Pesan</label>
+              <textarea placeholder="Halo Agus, saya tertarik untuk berkolaborasi..."></textarea>
+            </div>
+            <button class="btn-send" onclick="submitForm()">
+              Kirim Pesan ✉️
+            </button>
+          </div>
+          <div id="form-success">
+            <div style="font-size:2rem;margin-bottom:1rem;">✅</div>
+            Terima kasih! Pesan Anda sudah terkirim.<br>
+            <span style="color:var(--text-muted);font-size:0.8rem;font-family:'DM Sans',sans-serif;">Saya akan membalas dalam 24 jam.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <a href="#hero" class="footer-logo">dev.portfolio</a>
+      <span class="footer-copy">© 2025 Agus Wedi. Dibuat dengan ❤️ di Jakarta.</span>
+      <div class="footer-social">
+        <a href="#" class="social-btn" title="GitHub">🐙</a>
+        <a href="#" class="social-btn" title="LinkedIn">💼</a>
+        <a href="#" class="social-btn" title="Twitter">🐦</a>
+        <a href="#" class="social-btn" title="Instagram">📸</a>
+      </div>
+    </div>
+  </footer>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
